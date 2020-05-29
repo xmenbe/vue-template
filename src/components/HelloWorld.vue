@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <!-- <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -26,15 +26,21 @@
       <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
 <script>
+import http from '@/services/request'
+import demoService from '@/services/demo'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  async created() {
+    const result = await demoService.getCourseAreaList(1)
+    console.log('result', result)
   }
 }
 </script>
