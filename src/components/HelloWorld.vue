@@ -31,8 +31,7 @@
 </template>
 
 <script>
-import http from '@/services/request'
-import demoService from '@/services/demo'
+import demoService from '@/services/service-demo'
 export default {
   name: 'HelloWorld',
   props: {
