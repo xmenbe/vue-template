@@ -7,9 +7,6 @@ export default {
       data:  {
         key1: 1,
         key2: 2
-      },
-      headers: {
-        token1: 'sdfsdfd'
       }
     })
     return result;
