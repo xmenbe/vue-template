@@ -15,7 +15,7 @@ npm run serve
 npm run build
 ```
 
-### Run your tests6666
+### Run your tests
 ```
 npm run test
 ```
@@ -27,3 +27,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
